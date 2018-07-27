@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<meta name="robots" content="noindex, nofollow">
+	<title>롯데손해보험</title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/css/sub.css" />
+	<script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header"><h1><img src="/images/img_header.jpg" alt="header 임시이미지" title="header 임시이미지" /></h1></div>
+	<div id="content">
+		<div class="lnb_area"><h2><img src="/images/img_lnb.jpg" alt="lnb 임시이미지" title="lnb 임시이미지" /></h2></div>
+		<div class="sub_content">
+			<!-- S : 서브페이지 공통 타이틀 -->
+			<div class="sub_comm_title">
+				<h3>IRP 가입</h3>
+				<div class="breadcrumb">
+					<a href="#" title="퇴직연금 페이지로 이동합니다.">퇴직연금</a>
+					<a href="#" title="퇴직연금 가입 페이지로 이동합니다.">퇴직연금 가입</a>
+					<span>IRP가입</span>
+				</div>
+			</div>
+			<!-- E : 서브페이지 공통 타이틀 -->
+			<div class="irp_join">
+				<!-- S : 계약자정보입력 -->
+				<div class="irp_conts">
+					<h4 class="sub_part_title">계약자정보입력</h4>
+					<div class="write_table">
+						<table>
+							<caption>계약자정보입력</caption>
+							<colgroup>
+								<col style="width:18%" />
+								<col style="width:auto" />
+								<col style="width:18%" />
+								<col style="width:auto" />
+							</colgroup>
+							<tr>
+								<th scope="row"><label for="contractor_name">이름</label></th>
+								<td><input type="text" id="contractor_name" value="김문식" /></td>
+								<th scope="row">주민등록번호</th>
+								<td>800101-1111111</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="contractor_cellphone">휴대전화</label></th>
+								<td>
+									<select class="callnumber">
+										<option value="010">010</option>
+									</select>
+									<span class="callnumber_hypen">-</span>
+									<input type="text" id="contractor_cellphone" class="callnumber" value="- 없이 입력" onClick="this.value='';" />
+								</td>
+								<th scope="row"><label for="contractor_home">자택번호</label></th>
+								<td>
+									<select class="callnumber">
+										<option value="010">010</option>
+									</select>
+									<span class="callnumber_hypen">-</span>
+									<input type="text" id="contractor_home" class="callnumber" value="- 없이 입력" onClick="this.value='';" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일</th>
+								<td colspan="3">
+									<input type="text" class="email" title="이메일 아이디" />
+									<span class="atmark">@</span>
+									<input type="text" class="email" title="이메일 도메인" />
+									<select class="email">
+										<option value="직접입력">직접입력</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">자택주소</th>
+								<td colspan="3">
+									<div class="address_postnum">
+										<input type="number" class="postnum" />
+										<button type="button" class="btn_left">주소찾기</button>
+									</div>
+									<input type="text" class="address" title="자택 도로명주소" value="도로명주소" onClick="this.value='';" />
+									<input type="text" class="address" title="자택 상세주소" value="상세주소" onClick="this.value='';" />									
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">직장주소</th>
+								<td colspan="3">
+									<div class="address_postnum">
+										<input type="number" class="postnum" />
+										<button type="button" class="btn_left">주소찾기</button>
+									</div>
+									<input type="text" class="address" title="직장 도로명주소" value="도로명주소" onClick="this.value='';" />
+									<input type="text" class="address" title="직장 상세주소" value="상세주소" onClick="this.value='';" />									
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- E : 계약자정보입력 -->
+				<!-- S : 정보수신여부 -->
+				<div class="irp_conts">
+					<h4 class="sub_part_title">정보수신여부</h4>
+					<div class="write_table">
+						<table>
+							<caption>정보수신여부</caption>
+							<colgroup>
+								<col style="width:18%" />
+								<col style="width:auto" />
+							</colgroup>					
+							<tr>
+								<th scope="row">정보수신동의</th>
+								<td>
+									<div class="ip_radio"><input type="radio" id="infor_receive_agree" name="infor_receive" checked /><label for="infor_receive_agree"><span>동의</span></label></div>
+									<div class="ip_radio"><input type="radio" id="infor_receive_disagree" name="infor_receive" /><label for="infor_receive_disagree"><span>비동의</span></label></div>
+								</td>
+							</tr>		
+							<tr>
+								<th scope="row">매체선택</th>
+								<td>
+									<div class="ip_checkbox"><input type="checkbox" id="infor_media_all" checked /><label for="infor_media_all"><span>전체</span></label></div>
+									<div class="ip_checkbox"><input type="checkbox" id="infor_media_message" /><label for="infor_media_message"><span>문자메세지</span></label></div>
+									<div class="ip_checkbox"><input type="checkbox" id="infor_media_email" /><label for="infor_media_email"><span>이메일</span></label></div>
+									<div class="ip_checkbox"><input type="checkbox" id="infor_media_post01" /><label for="infor_media_post01"><span>우편(자택)</span></label></div>
+									<div class="ip_checkbox"><input type="checkbox" id="infor_media_post02" /><label for="infor_media_post02"><span>우편(직장)</span></label></div>
+								</td>
+							</tr>	
+						</table>
+					</span>
+					<ul class="list_style_dot">
+						<li>정보수신동의를 하셔야만 계약안내장 등의 계약운용정보를 수신할 수 있습니다.</li>
+					</ul>
+				</div>
+				<!-- E : 정보수신여부 -->
+				<!-- S : 직장정보 -->
+				<div class="irp_conts">
+					<h4 class="sub_part_title">직장정보</h4>
+					<div class="write_table">
+						<table>
+							<caption>직장정보</caption>
+							<colgroup>
+								<col style="width:18%" />
+								<col style="width:auto" />
+							</colgroup>					
+							<tr>
+								<th scope="row"><label for="company_name">현(전)직장명</label></th>
+								<td><input type="text" id="company_name" value="- 없이 입력" onClick="this.value='';" /></td>
+							</tr>		
+							<tr>
+								<th scope="row"><label for="pension_company_name">퇴직연금사업자</label></th>
+								<td>
+									<input type="text" id="pension_company_name" class="type02" />
+									<button type="button" class="btn_left">사업자 검색</button>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<ul class="list_style_dot">
+						<li>당사/타사 확정급여형(DB)도는 확정기여형(DC) 계약에 가입되어 있거나 가입 후 퇴직한 경우에 입력해 주세요.</li> 
+						<li>타 퇴직연금 사업자에 가입되어 있는 경우 자사 개인형 퇴직연금제도에 가입하기 위해 가입확인서 등 기타 서류가 필요할 수 있습니다.</li>
+					</ul>
+				</div>
+				<!-- E : 직장정보 -->
+				<!-- S : 소득금액증명서 제출 -->
+				<div class="irp_conts">
+					<h4 class="sub_part_title"><span class="blue">[선택]</span>소득금액증명서 제출</h4>
+					<div class="write_table">
+						<table>
+							<caption>소득금액증명서 제출</caption>
+							<colgroup>
+								<col style="width:18%" />
+								<col style="width:auto" />
+							</colgroup>					
+							<tr>
+								<th scope="row">발급번호</th>
+								<td>
+									<input type="text" title="발급번호 첫번째 4자리" value="4자리" onClick="this.value='';" class="type03" />
+									<input type="text" title="발급번호 두번째 4자리" value="4자리" onClick="this.value='';" class="type03" />
+									<input type="text" title="발급번호 세번째 4자리" value="4자리" onClick="this.value='';" class="type03" />
+									<input type="text" title="발급번호 네번째 4자리" value="4자리" onClick="this.value='';" class="type03" />
+								</td>
+							</tr>		
+
+						</table>
+					</div>
+					<ul class="list_style_dot">
+						<li>국세청 홈페이지에서 소득금액증명원 발급이 가능하며, 인터넷열람용으로 제공됩니다.</li> 
+						<li>준비된 서류가 있으면 입력해 주세요. 소득금액증서류 제출을 대체할 수 있습니다. </li>
+					</ul>
+				</div>
+				<!-- E : 소득금액증명서 제출 -->
+				<!-- S : 세금우대한도 설정 -->
+				<div class="irp_conts">
+					<h4 class="sub_part_title">세금우대한도 설정</h4>
+					<div class="write_table">
+						<table>
+							<caption>세금우대한도 설정</caption>
+							<colgroup>
+								<col style="width:18%" />
+								<col style="width:auto" />
+								<col style="width:18%" />
+								<col style="width:auto" />
+							</colgroup>					
+							<tr>
+								<th scope="row">세금우대한도잔여</th>
+								<td>
+									<span class="limit_amount">0원 </span>
+									<button type="button" class="btn_right">한도조회</button>
+								</td>
+								<th scope="row"><label for="limit_setting">세금우대한도설정</label></th>
+								<td>
+									<input type="text" id="limit_setting" /> 원
+								</td>
+							</tr>
+						</table>
+					</div>
+					<ul class="list_style_dot">
+						<li>개인부담금 납입한도는 연간 최대 1,200만원입니다. (단, 연금저축 +DC/IRP개인부담금 합산 1,800만원까지 입니다.)</li> 
+						<li>한도조회 버튼을 클릭하여 세금우대한도잔여 금액을 조회해 주시기 바랍니다.</li>
+						<li>
+							세금우대한도설정액이란? 
+							<ul>
+								<li>- 매년 개인형IRP로 추가 납입할 예상금액만큼을 세금우대로 설정할 수 있는 한도금액입니다. </li>
+								<li>- 세금우대한도잔여금액 내에서 세금우대한도를 설정할 수 있으며 한번 설정되면 매년 같은 금액으로 세금우대한도가 설정됩니다.</li>
+								<li>- 기본적으로 3백만 원으로 설정되어 있으니 변경을 원하시는 고객님은 원하시는 금액을 입력해주시기 바랍니다. </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- E : 소득금액증명서 제출 -->
+				<!-- S : 납입정보 -->
+				<div class="irp_conts">
+					<h4 class="sub_part_title">납입정보</h4>
+					<div class="tab_area">
+						<div class="tab_btn">
+							<button type="button" class="on">즉시출금</button>
+							<button type="button">가상계좌</button>
+						</div>
+					</div>
+					<div class="tab_conts_wrap">
+						<div class="tab_conts">
+							<div class="write_table">
+								<table>
+									<caption>납입정보 - 즉시출금</caption>
+									<colgroup>
+										<col style="width:18%" />
+										<col style="width:auto" />
+									</colgroup>					
+									<tr>
+										<th scope="row"><label for="payment_money01">납입금액</label></th>
+										<td><input type="text" id="payment_money01" /> 원</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="bank_number">계좌번호</label></th>
+										<td>
+											<select class="type02">
+												<option value="은행선택">은행선택</option>
+											</select>
+											<input type="text" id="bank_number" class="type02" value="- 없이 입력" onClick="this.value='';" />
+											<button type="button" class="btn_left">계좌확인</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="bank_name">예금주명</label></th>
+										<td><input type="text" id="bank_name" /></td>
+									</tr>
+								</table>
+							</div>
+							<ul class="list_style_dot">
+								<li>개인추가납입은 IRP 계약심사 완료 후 납입금액이 출금되며, 계약이 완료됩니다.</li>
+							</ul>
+						</div>
+						<div class="tab_conts" style="display:none;">
+							<div class="write_table">
+								<table>
+									<caption>납입정보 - 가상계좌</caption>
+									<colgroup>
+										<col style="width:18%" />
+										<col style="width:auto" />										
+									</colgroup>					
+									<tr>
+										<th scope="row"><label for="payment_money02">납입금액</label></th>
+										<td><input type="text" id="payment_money02" /> 원</td>
+									</tr>
+									<tr>
+										<th scope="row">입금전용계좌</th>
+										<td>
+											<select class="bank">
+												<option value="은행선택">은행선택</option>
+											</select>											
+										</td>
+									</tr>
+								</table>
+							</div>
+							<ul class="list_style_dot">
+								<li>입금전용계좌로 선택하신 은행에 고객님의 이름으로 가상계좌가 개설 됩니다.</li>
+								<li>가입신청 후 가상계좌번호로 납입예정금액을 입금해 주셔야 계약이 완료됩니다.</li>
+							</ul>
+						</div>
+					</div>						
+				</div>
+				<!-- E : 납입정보 -->
+				<!-- S : 자동이체신청 -->
+				<div class="irp_conts">
+					<h4 class="sub_part_title">자동이체신청</h4>
+					<div class="write_table">
+						<table>
+							<caption>자동이체신청</caption>
+							<colgroup>
+								<col style="width:18%" />
+								<col style="width:auto" />
+								<col style="width:18%" />
+								<col style="width:auto" />
+							</colgroup>					
+							<tr>
+								<th scope="row">신청여부</th>
+								<td colspan="3">
+									<div class="ip_radio"><input type="radio" id="application_agree" name="application" checked /><label for="application_agree"><span>신청</span></label></div>
+									<div class="ip_radio"><input type="radio" id="application_disagree" name="application" /><label for="application_disagree"><span>신청안함</span></label></div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="bank_number">계좌번호</label></th>
+								<td colspan="3">
+									<select class="type02">
+										<option value="은행선택">은행선택</option>
+									</select>
+									<input type="text" id="bank_number" class="type02" value="- 없이 입력" onClick="this.value='';" />
+									<button type="button" class="btn_left">계좌확인</button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="bank_name">예금주명</label></th>
+								<td><input type="text" id="bank_name" /></td>
+								<th scope="row">신청내용</th>
+								<td>신규</td>
+							</tr>
+							<tr>
+								<th scope="row">이체일</th>
+								<td>
+									<select>
+										<option value="25일">25일</option>
+									</select>
+								</td>
+								<th scope="row">자동이체시작일</th>
+								<td>2017년 11월 25일</td>								
+							</tr>
+						</table>
+					</div>
+					<ul class="list_style_dot">
+						<li><span>자동이체를 신청하시면 자동이체시작일일부터 매월 자동이체금액을 이체합니다.</span>예) 자동이체시작일 : 2015년, 이체일 : 25일 을 선택한 경우 2015년 11월 부터 매월 25일 자동이체금액을 자동으로 청구합니다.)</li>
+						<li>이체일에 통장 잔액부족 등 기타 사유로 인해 이체되지 못할 경우 재 이체하지 않습니다.(자유납입이므로 매월 한번만 이체)</li>
+					</ul>
+				</div>
+				<!-- E : 자동이체신청 -->
+				<div class="gray_box">
+					<div class="ip_checkbox"><input type="checkbox" id="automatic_agree" checked /><label for="automatic_agree">자동이체약관동의</label></div>
+					<button type="button" class="btn_right">전문보기</button>
+				</div>
+				<div class="button_area center">
+					<a href="#" title="이전페이지로 가기" class="btn_type01">이전</a>
+					<a href="#" title="다음페이지로 가기" class="btn_type02">다음</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"><img src="/images/img_footer.jpg" alt="footer 임시이미지" title="footer 임시이미지" /></div>
+</div>
+<script>
+	var $tabBtn = $('.tab_btn button');
+	var $tabContsWrap = $('.tab_conts_wrap .tab_conts');
+
+	$tabBtn.on('click', function(){
+		var idx = $(this).index();
+		$tabBtn.removeClass('on');
+		$tabContsWrap.hide();
+		$(this).addClass('on');
+		$($tabContsWrap[idx]).show();
+	})
+</script>
+</body>
+</html>

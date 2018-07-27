@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/****************************************************************
+Last Updated : 2018-07-26
+Author       : amy
+Version      : 2.0
+****************************************************************/
+#header {text-align:center; border-bottom:1px solid #000; margin-bottom:40px;}
+#content {width:980px; overflow:hidden; margin:0 auto;}
+#content .lnb_area {float:left; width:205px;}
+#content .sub_content {float:right; width:730px;}
+#footer {text-align:center; border-top:1px solid #dcdcdc; background:#fbfbfb}
+
+/* 공통 타이틀 */
+.sub_comm_title {width:100%; overflow:hidden; border-bottom:1px solid #dbdada; padding-bottom:5px; margin-bottom:50px;}
+.sub_comm_title h3 {float:left; font-size:20px; font-weight:600;}
+.sub_comm_title .breadcrumb {float:right; font-size:12px; margin-top:10px;}
+.sub_comm_title .breadcrumb a {float:left; overflow:hidden;}
+.sub_comm_title .breadcrumb a::after {content:'>'; padding:0 5px;}
+.sub_comm_title .breadcrumb span {float:left; overflow:hidden; color:#956b29; font-weight:600;}
+
+.sub_part_title {display:block; overflow:hidden; margin-bottom:15px; font-size:18px; font-weight:600;}
+.sub_part_title .blue {color:#4566a2;}
+
+/* 작성하기 */
+.write_table {width:100%; overflow:hidden; border-top:2px solid #000; margin-bottom:10px;}
+.write_table table {width:100%; table-layout:fixed;}
+.write_table table th {padding:10px 10px 10px 20px; box-sizing:border-box; background:#f5f5f5; border-bottom:1px solid #dbdbdb; text-align:left;}
+.write_table table td {padding:10px 10px 10px 10px; box-sizing:border-box; border-bottom:1px solid #dbdbdb;}
+.write_table table td input[type="text"], .write_table table td input[type="number"] {width:170px; border:1px solid #bebebe; height:28px; line-height:26px; color:#454545; padding:0 5px; box-sizing:border-box;}
+.write_table table td select {width:170px; border:1px solid #bebebe; height:28px; line-height:28px; color:#454545; padding:0 5px;}
+.write_table table td input.callnumber {float:left; width:115px}
+.write_table table td select.callnumber {float:left; width:65px}
+.write_table table td .callnumber_hypen {float:left; padding:0 10px; line-height:28px; color:#bebebe;}
+.write_table table td input.email {float:left; width:170px}
+.write_table table td select.email {float:left; width:170px; margin-left:10px;}
+.write_table table td .atmark {float:left; padding:0 10px; line-height:28px;}
+.write_table table td .address_postnum {overflow:hidden; margin-bottom:10px;}
+.write_table table td input.postnum {float:left; width:70px; margin-right:5px;}
+.write_table table td input.address {float:left; width:260px; margin-right:10px;}
+.write_table table td input.type02 {float:left; margin-right:5px;}
+.write_table table td select.type02 {float:left; margin-right:5px;}
+.write_table table td input.type03 {float:left; width:90px; margin-right:5px;}
+.write_table table td .limit_amount {line-height:28px;}
+
+/* 공통 버튼 */
+.button_area {display:block; overflow:hidden;}
+.button_area.center {text-align:center;}
+.button_area a, .button_area button {display:inline-block; padding:0 60px; height:50px; line-height:50px; margin:0 1px;}
+.button_area a.btn_type01, .button_area button.btn_type01 {background:#40464d; color:#fff;}
+.button_area a.btn_type02, .button_area button.btn_type02 {background:#d91f26; color:#fff;}
+.btn_left {float:left; padding:0 10px; background:#f2f2f2; border:1px solid #a8adb0; height:28px; line-height:26px; box-sizing:border-box; color:#444544; cursor:pointer;}
+.btn_right {float:right; padding:0 10px; background:#f2f2f2; border:1px solid #a8adb0; height:28px; line-height:26px; box-sizing:border-box; color:#444544; cursor:pointer;}
+
+/* 공통 리스트 */
+.list_style_dot {overflow:hidden;}
+.list_style_dot li {padding-left:25px; box-sizing:border-box; background:url('/images/ico_dot.png') no-repeat 15px 8px; line-height:1.8;}
+.list_style_dot li ul li {padding-left:0px; background:none; color:#787878}
+
+/* 회색박스 */
+.gray_box {overflow:hidden; padding:30px 80px; background:#f5f5f5; border-top:2px solid #000; border-bottom:1px solid #dbdbdb;}
+
+/* 탭 */
+.tab_area {width:100%; overflow:hidden;}
+.tab_area .tab_btn {overflow:hidden; border-bottom:1px solid #000; margin-bottom:30px;}
+.tab_area .tab_btn button {float:left;width:130px; height:40px; line-height:38px; border:1px solid #bebebe; background:#e6e6e6; color:#808080; cursor:pointer;}
+.tab_area .tab_btn button.on {color:#fff; background:#4d4d4d; border-color:#4d4d4d}
+
+/* IRP 가입 */
+.irp_join {margin-bottom:70px;}
+.irp_join .irp_conts {overflow:hidden; margin-bottom:40px;}
+.irp_join .gray_box {margin-bottom:50px;}
+.irp_join .gray_box .ip_checkbox {height:28px; line-height:28px;}
