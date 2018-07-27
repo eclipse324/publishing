@@ -71,7 +71,8 @@ Version      : 2.0
 .irp_join .irp_conts {overflow:hidden; margin-bottom:40px;}
 .irp_join .gray_box {margin-bottom:50px;}
 .irp_join .gray_box .ip_checkbox {height:28px; line-height:28px;}
-
+.irp_join .gray_box .ip_checkbox input[type="checkbox"] {top:6px}
+.irp_join .gray_box .ip_checkbox label {height:28px; line-height:28px;}
 
 
 /****************************************************************
@@ -79,11 +80,10 @@ Version      : 2.0
 ****************************************************************/
 @media screen and (max-width:780px) {
 
-body {min-width:100%; font-family:'맑은고딕', sans-serif;}
+body {min-width:100%; font-family:'맑은고딕', sans-serif; padding:0 4%; box-sizing:border-box;}
 #header img {width:100%;}
 #footer img {width:100%;}
 #content {width:100%; overflow:hidden; margin:0;}
 #content .lnb_area {display:none;}
 #content .sub_content {float:none; width:100%;}
-.write_table table td input {max-width:100%;}
 }
