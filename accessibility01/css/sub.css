@@ -22,6 +22,19 @@ Version      : 2.0
 .sub_part_title {display:block; overflow:hidden; margin-bottom:15px; font-size:18px; font-weight:600;}
 .sub_part_title .blue {color:#4566a2;}
 
+/* 공통 step */
+.step_area {width:100%; overflow:hidden; margin-bottom:45px;}
+.step_area ol {float:right;}
+.step_area ol li {float:left; height:48px; background:url('/images/bg_step.png') no-repeat right center; padding-right:25px; margin-right:15px;}
+.step_area ol li:last-child {background:none; padding:0; margin:0;}
+.step_area ol li .detail_info {display:none;}
+.step_area ol li .number {display:inline-block; margin:9px 0; width:30px; height:30px; border-radius:15px; text-align:center; line-height:30px; font-weight:600; background:#e9e9e9; color:#4d4d4d;}
+.step_area ol li.end .number {text-indent:-9999px; background:#4d4d4d url('/images/bg_step_end.png') no-repeat center center;}
+.step_area ol li.ing .number {display:none;}
+.step_area ol li.ing .detail_info {display:block; height:48px; padding-top:5px; box-sizing:border-box; color:#d91f26; font-weight:600; padding-left:54px; background:url('/images/bg_step_ing.png') no-repeat left center;}
+.step_area ol li.ing .detail_info .step {display:block; font-size:13px;}
+.step_area ol li.ing .detail_info .title {display:block; font-size:16px;}
+
 /* 작성하기 */
 .write_table {width:100%; overflow:hidden; border-top:2px solid #000; margin-bottom:10px;}
 .write_table table {width:100%; table-layout:fixed;}
